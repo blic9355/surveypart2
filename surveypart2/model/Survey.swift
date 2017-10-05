@@ -29,7 +29,7 @@ struct Survey {
     }
     
     // Mark: - failable
-    init?(dictionary: [String: Any], identifier: String) {
+    init?(dictionary: [String: String], identifier: String) {
         guard let name = dictionary[nameKey] as? String,
         let emoji = dictionary[emojiKey] as? String,
             let identifier = UUID(uuidString: identifier)  else { return nil }
