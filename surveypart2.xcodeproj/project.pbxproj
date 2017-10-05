@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D33F66CA1F868DAF0074D680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F66C91F868DAF0074D680 /* AppDelegate.swift */; };
-		D33F66CC1F868DAF0074D680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F66CB1F868DAF0074D680 /* ViewController.swift */; };
 		D33F66CF1F868DB00074D680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33F66CD1F868DB00074D680 /* Main.storyboard */; };
 		D33F66D11F868DB00074D680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33F66D01F868DB00074D680 /* Assets.xcassets */; };
 		D33F66D41F868DB00074D680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33F66D21F868DB00074D680 /* LaunchScreen.storyboard */; };
+		D33F66E11F8692FF0074D680 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F66E01F8692FF0074D680 /* Survey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D33F66C61F868DAF0074D680 /* surveypart2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = surveypart2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33F66C91F868DAF0074D680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D33F66CB1F868DAF0074D680 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D33F66CE1F868DB00074D680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D33F66D01F868DB00074D680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33F66D31F868DB00074D680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D33F66D51F868DB00074D680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33F66E01F8692FF0074D680 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,54 @@
 		D33F66C81F868DAF0074D680 /* surveypart2 */ = {
 			isa = PBXGroup;
 			children = (
+				D33F66DE1F86925B0074D680 /* UI */,
+				D33F66DD1F8692530074D680 /* view controller */,
+				D33F66DC1F86924C0074D680 /* model controller */,
+				D33F66DB1F8692490074D680 /* model */,
 				D33F66C91F868DAF0074D680 /* AppDelegate.swift */,
-				D33F66CB1F868DAF0074D680 /* ViewController.swift */,
 				D33F66CD1F868DB00074D680 /* Main.storyboard */,
 				D33F66D01F868DB00074D680 /* Assets.xcassets */,
 				D33F66D21F868DB00074D680 /* LaunchScreen.storyboard */,
 				D33F66D51F868DB00074D680 /* Info.plist */,
 			);
 			path = surveypart2;
+			sourceTree = "<group>";
+		};
+		D33F66DB1F8692490074D680 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D33F66E01F8692FF0074D680 /* Survey.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D33F66DC1F86924C0074D680 /* model controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "model controller";
+			sourceTree = "<group>";
+		};
+		D33F66DD1F8692530074D680 /* view controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "view controller";
+			sourceTree = "<group>";
+		};
+		D33F66DE1F86925B0074D680 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D33F66DF1F8692620074D680 /* New Group */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D33F66DF1F8692620074D680 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D33F66CC1F868DAF0074D680 /* ViewController.swift in Sources */,
 				D33F66CA1F868DAF0074D680 /* AppDelegate.swift in Sources */,
+				D33F66E11F8692FF0074D680 /* Survey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27CK957U72;
 				INFOPLIST_FILE = surveypart2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.surveypart2;
@@ -289,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27CK957U72;
 				INFOPLIST_FILE = surveypart2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.surveypart2;
